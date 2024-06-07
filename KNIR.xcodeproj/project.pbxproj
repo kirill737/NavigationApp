@@ -19,7 +19,6 @@
 		F3AD286B2BF3AAD30060C3A7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3AD286A2BF3AAD30060C3A7 /* Base */; };
 		F3AD28752BF4D4AD0060C3A7 /* GraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD28742BF4D4AD0060C3A7 /* GraphModel.swift */; };
 		F3AD28792BF4D5F00060C3A7 /* PathNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD28782BF4D5F00060C3A7 /* PathNodeModel.swift */; };
-		F3F200FD2BFA20D700E5C07E /* SelectCampusSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F200FC2BFA20D700E5C07E /* SelectCampusSwiftUIView.swift */; };
 		F3F201052BFAA25E00E5C07E /* PathMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F201042BFAA25E00E5C07E /* PathMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		F3AD286C2BF3AAD30060C3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3AD28742BF4D4AD0060C3A7 /* GraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModel.swift; sourceTree = "<group>"; };
 		F3AD28782BF4D5F00060C3A7 /* PathNodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathNodeModel.swift; sourceTree = "<group>"; };
-		F3F200FC2BFA20D700E5C07E /* SelectCampusSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCampusSwiftUIView.swift; sourceTree = "<group>"; };
 		F3F201042BFAA25E00E5C07E /* PathMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +89,6 @@
 			children = (
 				F32B7A8A2BFF900300DF7F65 /* LoadViewController.swift */,
 				F3F201042BFAA25E00E5C07E /* PathMenuViewController.swift */,
-				F3F200FC2BFA20D700E5C07E /* SelectCampusSwiftUIView.swift */,
 				F3AD28622BF3AACD0060C3A7 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -186,7 +183,6 @@
 				F3AD285F2BF3AACD0060C3A7 /* AppDelegate.swift in Sources */,
 				F3AD28752BF4D4AD0060C3A7 /* GraphModel.swift in Sources */,
 				F34459802BF6B4B1002C6280 /* MapModel.swift in Sources */,
-				F3F200FD2BFA20D700E5C07E /* SelectCampusSwiftUIView.swift in Sources */,
 				F3AD28612BF3AACD0060C3A7 /* SceneDelegate.swift in Sources */,
 				F3F201052BFAA25E00E5C07E /* PathMenuViewController.swift in Sources */,
 			);

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class ViewController: UIViewController, UISheetPresentationControllerDelegate {
     @IBOutlet weak var pathTextView: UITextView!
@@ -49,8 +48,9 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate {
         totalTimeLabel.textAlignment = .center
         selectCampusButton.setTitle("Корпус Б", for: .normal)
         selectCampusButton.tintColor = .misisBlue
-        selectCampusButton.addTarget(self, action: #selector(openSearch), for: .touchUpInside)
-        view.addSubview(selectCampusButton)
+//        selectCampusButton.isEnabled = false
+//        selectCampusButton.addTarget(self, action: #selector(openSearch), for: .touchUpInside)
+//        view.addSubview(selectCampusButton)
         
         map.initializeGraph()
         print(map.currentFloor)
@@ -106,25 +106,25 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate {
             
     }
     
-    @objc private func openSearch() {
-        var searchSwiftUIView = SearchSwiftUIView(searchSelectedCampus: selectedCampus, validCampuses: validCampuses)
-
-        searchSwiftUIView.searchSelectedCampus = selectedCampus
-        searchSwiftUIView.onSelectCampus = { [weak self] selectedCampus in
-            self?.selectedCampus = selectedCampus
-            print(self!.selectedCampus)
-            self?.selectCampusButton.setTitle(self?.selectedCampus, for: .normal)
-            self?.dismiss(animated: true, completion: nil)
-        }
-
-        let controller = UIHostingController(rootView: searchSwiftUIView)
-        let sheetController = controller.sheetPresentationController
-        sheetController?.detents = [.medium(), .large()]
-        sheetController?.preferredCornerRadius = 16
-        sheetController?.prefersGrabberVisible = true
-        sheetController?.delegate = self
-        present(controller, animated: true)
-    }
+//    @objc private func openSearch() {
+//        var searchSwiftUIView = SearchSwiftUIView(searchSelectedCampus: selectedCampus, validCampuses: validCampuses)
+//
+//        searchSwiftUIView.searchSelectedCampus = selectedCampus
+//        searchSwiftUIView.onSelectCampus = { [weak self] selectedCampus in
+//            self?.selectedCampus = selectedCampus
+//            print(self!.selectedCampus)
+//            self?.selectCampusButton.setTitle(self?.selectedCampus, for: .normal)
+//            self?.dismiss(animated: true, completion: nil)
+//        }
+//
+//        let controller = UIHostingController(rootView: searchSwiftUIView)
+//        let sheetController = controller.sheetPresentationController
+//        sheetController?.detents = [.medium(), .large()]
+//        sheetController?.preferredCornerRadius = 16
+//        sheetController?.prefersGrabberVisible = true
+//        sheetController?.delegate = self
+//        present(controller, animated: true)
+//    }
 
 
     
