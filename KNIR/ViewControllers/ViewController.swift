@@ -8,6 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController, UISheetPresentationControllerDelegate {
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     @IBOutlet weak var pathTextView: UITextView!
     @IBOutlet weak var floorLabel: UILabel!
     @IBOutlet weak var floorMenuTableVIew: UITableView!
