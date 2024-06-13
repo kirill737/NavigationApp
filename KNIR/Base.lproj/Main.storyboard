@@ -17,44 +17,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KH3-EK-zPh">
-                                <rect key="frame" x="16" y="110" width="65" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KH3-EK-zPh">
+                                <rect key="frame" x="10" y="109" width="65" height="210"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Этаж 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0B-h2-z1Y">
-                                <rect key="frame" x="138" y="69" width="118" height="25.333333333333329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Этаж 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0B-h2-z1Y">
+                                <rect key="frame" x="136.66666666666666" y="74" width="119.66666666666666" height="25"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txN-ra-929">
-                                <rect key="frame" x="271" y="69" width="98" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Корпус А"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totalTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-oE-yU0">
-                                <rect key="frame" x="140" y="334" width="113" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-oE-yU0">
+                                <rect key="frame" x="128" y="334" width="137" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Path Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ngr-H8-WIS">
-                                <rect key="frame" x="87" y="110" width="229" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Path Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ngr-H8-WIS">
+                                <rect key="frame" x="85" y="110" width="223" height="210"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txN-ra-929">
+                                <rect key="frame" x="276.66666666666669" y="64" width="100.33333333333331" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Корпус А"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7En-IU-Xyq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="txN-ra-929" firstAttribute="top" secondItem="7En-IU-Xyq" secondAttribute="top" constant="10" id="Tjc-3p-PVe"/>
-                            <constraint firstItem="7En-IU-Xyq" firstAttribute="trailing" secondItem="txN-ra-929" secondAttribute="trailing" constant="24" id="W9A-B1-Z6l"/>
+                            <constraint firstItem="7En-IU-Xyq" firstAttribute="trailing" secondItem="Ngr-H8-WIS" secondAttribute="trailing" constant="85" id="0rH-wp-PvZ"/>
+                            <constraint firstItem="I0B-h2-z1Y" firstAttribute="bottom" secondItem="txN-ra-929" secondAttribute="bottom" id="2KR-I3-kYh"/>
+                            <constraint firstItem="Vyg-oE-yU0" firstAttribute="leading" secondItem="7En-IU-Xyq" secondAttribute="leading" constant="128" id="AEX-7i-Dfd"/>
+                            <constraint firstItem="txN-ra-929" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FgQ-Ec-4DR"/>
+                            <constraint firstItem="I0B-h2-z1Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJ1-UN-9QP"/>
+                            <constraint firstItem="KH3-EK-zPh" firstAttribute="top" secondItem="7En-IU-Xyq" secondAttribute="top" constant="50" id="RBT-vQ-pt2"/>
+                            <constraint firstItem="Ngr-H8-WIS" firstAttribute="centerX" secondItem="Vyg-oE-yU0" secondAttribute="centerX" id="RJn-JQ-3gV"/>
+                            <constraint firstItem="Ngr-H8-WIS" firstAttribute="top" secondItem="I0B-h2-z1Y" secondAttribute="bottom" constant="11" id="SdV-nk-LFs"/>
+                            <constraint firstItem="I0B-h2-z1Y" firstAttribute="leading" secondItem="7En-IU-Xyq" secondAttribute="leading" constant="136.66666666666663" id="aTE-cw-tEn"/>
+                            <constraint firstItem="Vyg-oE-yU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZb-ti-xO9"/>
+                            <constraint firstItem="Vyg-oE-yU0" firstAttribute="top" secondItem="Ngr-H8-WIS" secondAttribute="bottom" constant="14" id="d4t-qS-Nfb"/>
+                            <constraint firstItem="txN-ra-929" firstAttribute="leading" secondItem="I0B-h2-z1Y" secondAttribute="trailing" constant="20.333333333333371" id="deV-T5-7cs"/>
+                            <constraint firstItem="7En-IU-Xyq" firstAttribute="bottom" secondItem="KH3-EK-zPh" secondAttribute="bottom" constant="499" id="jSW-4C-1Y6"/>
+                            <constraint firstItem="7En-IU-Xyq" firstAttribute="bottom" secondItem="Vyg-oE-yU0" secondAttribute="bottom" constant="463" id="k52-87-oDe"/>
+                            <constraint firstItem="I0B-h2-z1Y" firstAttribute="centerX" secondItem="Ngr-H8-WIS" secondAttribute="centerX" id="k9R-a7-lvZ"/>
+                            <constraint firstItem="KH3-EK-zPh" firstAttribute="leading" secondItem="7En-IU-Xyq" secondAttribute="leading" constant="10" id="mZc-x6-eQd"/>
+                            <constraint firstItem="txN-ra-929" firstAttribute="top" secondItem="7En-IU-Xyq" secondAttribute="top" constant="5" id="p4I-h1-nV8"/>
+                            <constraint firstItem="Ngr-H8-WIS" firstAttribute="leading" secondItem="KH3-EK-zPh" secondAttribute="trailing" constant="10" id="rvP-RU-eEM"/>
                         </constraints>
                     </view>
                     <connections>
