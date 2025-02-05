@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct ViewControllerRepresentable: UIViewControllerRepresentable {
     @Binding var isPresented: Bool
     @Binding var selectedCampus: String?
